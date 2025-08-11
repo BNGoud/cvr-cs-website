@@ -1,0 +1,11 @@
+.div{
+    object-fit:unset;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    transform: scale(1,1);
+    text-align: justify;
+    font-size: 3 rem;
+    background-color: bisque;
+}
