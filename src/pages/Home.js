@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import Header from '../components/Header'; // Adjust the path as needed
 import Footer from '../components/Footer';
 import { Container, Row, Col, Navbar, Nav, Card, Carousel } from 'react-bootstrap';

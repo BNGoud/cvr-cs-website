@@ -26,9 +26,9 @@ nav{
   background: linear-gradient(to right, #b859fb, #00008b); /* Custom gradient */
   /* justify-content: space-around; */
   display: flex;
-  justify-content: right;
+  justify-content: left;
   align-items: center;
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 .navbar-custom .nav-link {
@@ -37,7 +37,7 @@ nav{
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
   display: flex;
-  justify-content: right;
+  justify-content: left;
   align-items: center;
   margin: 0 15px;
 }
