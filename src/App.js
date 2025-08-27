@@ -8,7 +8,8 @@ import Objectives from './pages/Objectives'
 import AcademicCalendar from './pages/AcademicCalendar'
 import SyllabusBooks from './pages/SyllabusBooks'
 import TimeTables from './pages/TimeTables'
-import Contact from './pages/Contatct';
+import Contact from './pages/Contact';
+import About from './pages/About';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="SyllabusBooks.js" element={<SyllabusBooks />} />
         <Route path="TimeTables.js" element={<TimeTables />} />
         <Route path="Contact.js" element={<Contact />} />
+        <Route path="About.js" element={<About />} />
       </Routes>
     </Router>
   

@@ -1,11 +1,13 @@
 .div{
-    object-fit:unset;
+    object-fit:contain;
     display: flex;
-    justify-content: center;
+    justify-content:;
     align-content: center;
     align-self: center;
     transform: scale(1,1);
-    text-align: justify;
+    text-align:justify;
     font-size: 3 rem;
-    background-color: bisque;
+    font-weight: bolder;
+    background-color: rgb(165, 171, 247);
+    color: rgb(197, 7, 7);
 }

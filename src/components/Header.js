@@ -4,16 +4,15 @@ import { Container, Row, Col, Navbar, Nav,NavDropdown } from 'react-bootstrap';
 
 const style = `
 .top-header {
-    background-color: white;
+    background-color: #ffffffd1 !important;
+    width:100%;
 }
-.logo-main {
-    width: 130px;
-    height: auto;
-}
-.text-dept{
-    font-family: 'Times New Roman', Times, serif;
-    color: #00008b !important;
-    
+
+.dept-name{
+  font-family: 'Times New Roman', Times, serif;
+  font-size:3.2rem;
+  font-weight: bolder;
+  color: #b30f0dbb;
 }
 nav{
   display: flex;
@@ -23,12 +22,12 @@ nav{
 
 }
 .navbar-custom {
-  background: linear-gradient(to right, #b859fb, #00008b); /* Custom gradient */
+  background: linear-gradient(to right, #fb59b5ff, #00008b); /* Custom gradient */
   /* justify-content: space-around; */
   display: flex;
   justify-content: left;
   align-items: center;
-  margin: 0 15px;
+  margin:0 5px;
 }
 
 .navbar-custom .nav-link {
@@ -37,7 +36,7 @@ nav{
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
   display: flex;
-  justify-content: left;
+  justify-content:left;
   align-items: center;
   margin: 0 15px;
 }
@@ -71,81 +70,117 @@ nav{
     background-color: #382c2c;
     border-radius: 5px;
 }
-/* Flexbox for center alignment of department name on large screens */
-    @media (min-width: 992px) {
-  .dept-name-col {
+
+
+/* Medium devices */
+@media (min-width: 768px) {
+  .College-logo, .College-Name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90px;
+    max-width: 80%; /* Adjust as needed */
+    // object-fit: contain;
+  }
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+  .College-logo, .College-Name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    max-width: 80%;
+    // object-fit: contain;
+  }
+    .dept-name-col {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  .dept-logo-col {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
+    // .dept-logo-col {
+  //   display: flex;
+  //   justify-content: flex-end;
+  //   align-items: center;
+  // }
 }
+/* Flexbox for center alignment of department name on large screens */
+
 @media (max-width: 991px) {
   .dept-name-col {
     text-align: center;
     margin-top: 1rem;
   }
-  .dept-logo-col {
-    text-align: center;
-    margin-top: 1rem;
-  }
-  .logo-col {
-    text-align: center;
-  }
+  // .dept-logo-col {
+  //   text-align: center;
+  //   margin-top: 1rem;
+  // }
+  // .logo-col {
+  //   text-align: center;
+  // }
 }
 `;
 
 const Header = () => {
     return (
-        <div className="header-container">
-        {/* Top Header Section */}
-        <Container className="top-header p-0">
-            {/* <Row className="align-items-center">
-            <Col md={6} className="logo-section d-flex align-items-center"> */}
-                {/* Replace with your logo */}
-                {/* <img src="dept-images/cvr_logo.jpg" alt="CVR College of Engineering Logo" className="logo" />
-                <div className="college-info ms-3">
-                <h1 className="h5 text-primary fw-bold mb-0">CVR COLLEGE OF ENGINEERING</h1>
-                <p className="pursuit mb-0 text-end">In Pursuit of Excellence</p>
-                <p className="autonomous small mb-0 text-end">(An Autonomous Institution, NAAC 'A' Grade)</p>
-                </div>
+      <div className="header-container m-0">
+      <style>{style}</style>
+      {/* <div className="d-flex justify-content-center align-items-center  bg-white  font-sans"> */}
+      <Container className="text-center">
+        {/* Layout for large devices (2 rows) */}
+        <div className="d-none d-lg-block">
+          {/* Row 1: Logo and College Name */}
+          <Row className="justify-content-center align-items-center ">
+            <Col lg={1}>
+              <img
+                src="dept-images/cvr_logo.jpg"
+                alt="CVR College Logo"
+                className="img-fluid"
+                style={{  height: '75px', objectFit: 'contain' }}
+              />
             </Col>
-            <Col md={6} className="dept-section text-md-end mt-3 mt-md-0">
-                <h3 className="deptname h3 text-primary fw-bold mb-0">Department of Computer Science and Engineering</h3>
-                <h3 className="deptname h3 text-primary fw-bold text-center mt-1">(Cyber Security)</h3>
+            <Col lg={7}>
+              <img
+                src="dept-images/College_Name1.JPG"
+                alt="CVR College Name"
+                className="img-fluid"
+                style={{ height: '70px', objectFit: 'contain' }}
+              />
             </Col>
-            </Row> */}
-            <style>{style}</style>
-            <Row className="container align-items-center">
-            {/* College Logo (Left) */}
-            <Col lg={2} className="logo-col">
-                {/* Replace this with your actual college logo URL */}
-                <img src="dept-images/cvr_logo.jpg" alt="CVR College Logo" className="logo-main" />
+          </Row>
+          {/* Row 2: Department Name */}
+          <Row className="justify-content-center align-items-center">
+            <Col>
+              <h1 className="dept-name">
+                Department of CSE (Cyber Security)
+              </h1>
             </Col>
+          </Row>
+        </div>
 
-            {/* Department Name (Center) */}
-            <Col lg={10} className="dept-name-col">
-                <div>
-                <h1 className="text-dept fw-bold mb-2">Department of Computer Science and Engineering</h1>
-                <h1 className="text-dept fw-bold ">(Cyber Security)</h1>
-                </div>
-            </Col>
-
-            {/* Department Logo (Right) */}
-            {/* <Col lg={2} className="dept-logo-col"> */}
-                {/* Replace this with your actual department logo URL */}
-                {/* <img src="dept-images/Cybersecurity.jpeg" alt="Department Logo" className="logo-main" />
-            </Col> */}
-            </Row>
-
-
-        </Container>
-        
+        {/* Layout for small and medium devices (stacked) */}
+        <div className="d-lg-none d-flex flex-column align-items-center justify-content-center">
+          <img
+            src="dept-images/cvr_logo.jpg"
+            alt="CVR College Logo"
+            className="w-full mb-3 img-fluid"
+            style={{ maxHeight: '75px', objectFit: 'contain' }}
+          />
+          <img
+            src="dept-images/College_Name1.JPG"
+            alt="CVR College Name"
+            className="w-full mb-3 img-fluid"
+            style={{ maxHeight: '75px', objectFit: 'contain' }}
+          />
+          <h1 className="dept-name">
+            Department of CSE (Cyber Security)
+          </h1>
+        </div>
+      </Container>
         {/* Navigation Bar */}
         <Navbar expand="lg" className="navbar-custom">
             <Container class="px-5">
@@ -153,9 +188,11 @@ const Header = () => {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="">
                 <Nav.Link href="Home.js">Home</Nav.Link>
+                <Nav.Link href="About.js">About</Nav.Link>
+               
                 {/* Academics Dropdown Menu */}
                 <NavDropdown title="Academics" id="basic-nav-dropdown" menuVariant="light" className="dropdown-menu-custom">
-                    <NavDropdown.Item href="Objectives.js" className="dropdown-item">Objectives</NavDropdown.Item>
+                    {/* <NavDropdown.Item href="Objectives.js" className="dropdown-item">Objectives</NavDropdown.Item> */}
                     <NavDropdown.Item href="AcademicCalendar.js" className="dropdown-item">Academic Calendar</NavDropdown.Item>
                     <NavDropdown.Item href="SyllabusBooks.js" className="dropdown-item">Syllabus Books</NavDropdown.Item>
                     <NavDropdown.Item href="TimeTables.js" className="dropdown-item">Time Tables</NavDropdown.Item>
@@ -194,13 +231,15 @@ const Header = () => {
                     <NavDropdown.Item href="patents.js" className="dropdown-item">Patents</NavDropdown.Item>
                     <NavDropdown.Item href="publications.js" className="dropdown-item">Publications</NavDropdown.Item>
                 </NavDropdown>
-                {/* <Nav.Link href="#">About</Nav.Link> */}
+                
                 <Nav.Link href="Contact.js">Contact</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
             </Container>
         </Navbar>
         </div>
+        // </div>
+
     );
 };
 

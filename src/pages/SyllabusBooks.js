@@ -75,19 +75,19 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
         {
         year: 'II Year',
         regulation: '2025-26 - R22',
-        pdfUrl: 'SyllabusBooks/WT_SUB.pdf',
+        pdfUrl: 'SyllabusBooks/II-CSC(R22).pdf',
         iconUrl: 'https://placehold.co/64x64/4682B4/fff?text=%E2%9C%85',
         },
         {
         year: 'III Year',
         regulation: '2025-26 - R22',
-        pdfUrl: 'SyllabusBooks/WT_SUB.pdf',
+        pdfUrl: 'SyllabusBooks/III&IV-CSC(R22).pdf',
         iconUrl: 'https://placehold.co/64x64/4682B4/fff?text=%E2%9C%85',
         },
         {
         year: 'IV Year',
         regulation: '2025-26 - R22',
-        pdfUrl: 'SyllabusBooks/WT_SUB.pdf',
+        pdfUrl: 'SyllabusBooks/III&IV-CSC(R22).pdf',
         iconUrl: 'https://placehold.co/64x64/4682B4/fff?text=%E2%9C%85',
         },
     ];

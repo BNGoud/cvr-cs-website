@@ -69,25 +69,25 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
         {
         year: 'I Year',
         regulation: '2025-26 - R25',
-        pdfUrl: 'TimeTables/WT_SUB.pdf',
+        pdfUrl: 'TimeTables/',
         iconUrl: 'https://placehold.co/64x64/4682B4/fff?text=%E2%9C%85',
         },
         {
         year: 'II Year',
         regulation: '2025-26 - R22',
-        pdfUrl: 'TimeTables/WT_SUB.pdf',
+        pdfUrl: 'TimeTables/II-I.pdf',
         iconUrl: 'https://placehold.co/64x64/4682B4/fff?text=%E2%9C%85',
         },
         {
         year: 'III Year',
         regulation: '2025-26 - R22',
-        pdfUrl: 'TimeTables/WT_SUB.pdf',
+        pdfUrl: 'TimeTables/III-I.pdf',
         iconUrl: 'https://placehold.co/64x64/4682B4/fff?text=%E2%9C%85',
         },
         {
         year: 'IV Year',
         regulation: '2025-26 - R22',
-        pdfUrl: 'TimeTables/WT_SUB.pdf',
+        pdfUrl: 'TimeTables/IV-I.pdf',
         iconUrl: 'https://placehold.co/64x64/4682B4/fff?text=%E2%9C%85',
         },
     ];
