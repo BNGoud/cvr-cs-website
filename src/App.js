@@ -9,7 +9,8 @@ import AcademicCalendar from './pages/AcademicCalendar'
 import SyllabusBooks from './pages/SyllabusBooks'
 import TimeTables from './pages/TimeTables'
 import Contact from './pages/Contact';
-import About from './pages/About';
+ import About from './pages/About';
+
 
 const App = () => {
   return (

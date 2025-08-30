@@ -10,6 +10,9 @@ const style = `
         padding: 0rem 0;
         // background-color: bisque
     }
+    .nonFaculty-main{
+        background-color: rgba(170, 236, 123, 0.51);
+    }
     .custom-container{
         // background-color:#0f0ff14b;
         padding-left:20px;
@@ -127,11 +130,11 @@ const NonTeaching = () => {
     const handleBackToList = () => {
         setSelectedFaculty(null);
     };
-
     return (
         <div className="faculty-list-container">
         <style>{style}</style>
         <Header />
+        <div className="nonFaculty-main p-2">
         <Container class="custom-container m-3">
             {selectedFaculty ? (
             <div>
@@ -196,6 +199,7 @@ const NonTeaching = () => {
             </>
             )}
         </Container>
+        </div>
         <Footer />
         </div>
     );

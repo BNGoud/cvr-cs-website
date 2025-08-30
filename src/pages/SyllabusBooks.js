@@ -9,6 +9,9 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
         // padding: 3rem 0;
         
     }
+    .syllabus-main{
+        background-color: rgba(170, 236, 123, 0.51);
+    }
 
     .syllabus-book-main-container {
         background-color: #f8f9fa;
@@ -96,6 +99,7 @@ const SyllabusBooks = () => {
         <div className="syllabus-book-container">
         <style>{style}</style>
         <Header />
+        <div className="syllabus-main p-2">
         <Container>
             <div className="syllabus-book-main-container">
             <h2 className="syllabus-book-title">Syllabus Books</h2>
@@ -117,6 +121,7 @@ const SyllabusBooks = () => {
             </Row>
             </div>
         </Container>
+        </div>
         <Footer />
         </div>
     );

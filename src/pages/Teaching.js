@@ -9,6 +9,9 @@ const style = `
         font-family: 'Times New Roman', Times, serif;
         padding: 0rem 0;
     }
+    .faculty-main{
+        background-color: rgba(170, 236, 123, 0.51);
+    }
 
     .faculty-list-title {
         text-align: center;
@@ -247,6 +250,7 @@ const Teaching = () => {
         <div className="faculty-list-container">
         <style>{style}</style>
         <Header />
+        <div className="faculty-main">
         <Container class="m-3">
             {selectedFaculty ? (
             <div>
@@ -312,6 +316,7 @@ const Teaching = () => {
             </>
             )}
         </Container>
+        </div>
         <Footer />
         </div>
     );

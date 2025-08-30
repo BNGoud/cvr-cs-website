@@ -9,6 +9,9 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
         // padding: 3rem 0;
         
     }
+    .academic-main{
+        background-color: rgba(170, 236, 123, 0.51);
+    }
 
     .academic-calendar-main-container {
         background-color: #f8f9fa;
@@ -96,6 +99,7 @@ const AcademicCalendar = () => {
         <div className="academic-calendar-container">
         <style>{style}</style>
         <Header />
+        <div className="academic-main p-2">
         <Container>
             <div className="academic-calendar-main-container">
             <h2 className="academic-calendar-title">B.Tech Programs</h2>
@@ -117,6 +121,7 @@ const AcademicCalendar = () => {
             </Row>
             </div>
         </Container>
+        </div>
         <Footer />
         </div>
     );

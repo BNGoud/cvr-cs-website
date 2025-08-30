@@ -23,11 +23,12 @@ nav{
 }
 .navbar-custom {
   background: linear-gradient(to right, #fb59b5ff, #00008b); /* Custom gradient */
-  /* justify-content: space-around; */
+  /*  */
   display: flex;
-  justify-content: left;
+  justify-content: space-evenly;
+  
+  // justify-content: space-around;
   align-items: center;
-  margin:0 5px;
 }
 
 .navbar-custom .nav-link {
@@ -36,9 +37,9 @@ nav{
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
   display: flex;
-  justify-content:left;
+  justify-content:center;
   align-items: center;
-  margin: 0 15px;
+  margin: 0 25px;
 }
 
 
@@ -85,49 +86,13 @@ nav{
   }
 }
 
-/* Large devices */
-@media (min-width: 992px) {
-  .College-logo, .College-Name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100px;
-    max-width: 80%;
-    // object-fit: contain;
-  }
-    .dept-name-col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-    // .dept-logo-col {
-  //   display: flex;
-  //   justify-content: flex-end;
-  //   align-items: center;
-  // }
-}
-/* Flexbox for center alignment of department name on large screens */
 
-@media (max-width: 991px) {
-  .dept-name-col {
-    text-align: center;
-    margin-top: 1rem;
-  }
-  // .dept-logo-col {
-  //   text-align: center;
-  //   margin-top: 1rem;
-  // }
-  // .logo-col {
-  //   text-align: center;
-  // }
 }
 `;
 
 const Header = () => {
     return (
-      <div className="header-container m-0">
+      <div className="header-container">
       <style>{style}</style>
       {/* <div className="d-flex justify-content-center align-items-center  bg-white  font-sans"> */}
       <Container className="text-center">
@@ -183,13 +148,13 @@ const Header = () => {
       </Container>
         {/* Navigation Bar */}
         <Navbar expand="lg" className="navbar-custom">
-            <Container class="px-5">
+            <Container class="">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="">
                 <Nav.Link href="Home.js">Home</Nav.Link>
                 <Nav.Link href="About.js">About</Nav.Link>
-               
+
                 {/* Academics Dropdown Menu */}
                 <NavDropdown title="Academics" id="basic-nav-dropdown" menuVariant="light" className="dropdown-menu-custom">
                     {/* <NavDropdown.Item href="Objectives.js" className="dropdown-item">Objectives</NavDropdown.Item> */}
@@ -217,11 +182,11 @@ const Header = () => {
                 </NavDropdown>
 
                 {/* Publications Hub Dropdown Menu */}
-                <NavDropdown title="Publications Hub" id="publications-hub-nav-dropdown" menuVariant="light" className="dropdown-menu-custom">
+                {/* <NavDropdown title="Publications Hub" id="publications-hub-nav-dropdown" menuVariant="light" className="dropdown-menu-custom">
                     <NavDropdown.Item href="technical.js" className="dropdown-item">Technical</NavDropdown.Item>
                     <NavDropdown.Item href="NonTechnical.js" className="dropdown-item">Non-Technical</NavDropdown.Item>
                     <NavDropdown.Item href="NewsLetter.js" className="dropdown-item">Newsletter</NavDropdown.Item>
-                </NavDropdown>
+                </NavDropdown> */}
 
                 {/* Research Dropdown Menu */}
                 <NavDropdown title="Research" id="research-nav-dropdown" menuVariant="light" className="dropdown-menu-custom">

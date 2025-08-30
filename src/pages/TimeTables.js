@@ -9,6 +9,9 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
         // padding: 3rem 0;
         
     }
+    .TimeTables-main{
+        background-color: rgba(170, 236, 123, 0.51);
+    }
 
     .timeTable-main-container {
         background-color: #f8f9fa;
@@ -96,6 +99,7 @@ const TimeTables = () => {
         <div className="timeTable-container">
         <style>{style}</style>
         <Header />
+        <div className="TimeTables-main p-2">
         <Container>
             <div className="timeTable-main-container">
             <h2 className="timeTable-title">Time Tables</h2>
@@ -117,6 +121,7 @@ const TimeTables = () => {
             </Row>
             </div>
         </Container>
+        </div>
         <Footer />
         </div>
     );

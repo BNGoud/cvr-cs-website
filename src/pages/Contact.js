@@ -8,6 +8,9 @@ const Contact = () => {
             font-family: 'Times New Roman', Times, serif;
             padding: 0 0;
         }
+        .contact-main{
+            background-color: rgba(170, 236, 123, 0.51);
+        }
         .contact-title {
             text-align: center;
             font-weight: bold;
@@ -61,6 +64,7 @@ const Contact = () => {
         <div className="contact-container">
         <style>{style}</style>
         <Header />
+        <div className="contact-main p-2">
         <Container>
             <h2 className="contact-title">Contact Us</h2>
             <Row className="g-4 justify-content-center mb-3">
@@ -111,6 +115,7 @@ const Contact = () => {
             </Col>
             </Row>
         </Container>
+        </div>
         <Footer />
         </div>
     );

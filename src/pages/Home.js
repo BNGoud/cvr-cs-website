@@ -7,7 +7,7 @@ import React, { useState, useEffect } from 'react';
 const styles = `
 /* Home Page Specific Styles */
 .main{
-    background-color: rgba(231, 241, 99, 0.27);
+    background-color: rgba(170, 236, 123, 0.51);
 }
 .dept-about{
     background-color: #c9c9f2ff;
@@ -20,7 +20,7 @@ const styles = `
     text-align: justify;
 }
 .text-Heading{
-    color: #0db924ff;
+    color: #cd0792ff;
     font-weight: bolder;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -33,6 +33,8 @@ const styles = `
 .carousel-img {
     height: 400px;
     object-fit: cover;
+    border-radius: 2%;
+
 }
 .hod-name{
     font-weight: bolder;
@@ -40,7 +42,7 @@ const styles = `
     text-decoration: underline;
 }
 .profile-img-hod {
-    width: 300px;
+    width: 280px;
     height: 300px;
     object-fit: cover;
     border-radius: 10%;
@@ -86,9 +88,9 @@ const customStyles = `
         margin-top: 0.5rem;
         color: #555;
     }
-        .card-item:hover .number,
+    .card-item:hover .number,
     .card-item:hover .role {
-    color: red;
+        color: red;
     }
 
 `;
@@ -110,8 +112,8 @@ return (
         <div>
         <Header />
         <style>{styles}</style>
-       <div class="main pb-3 mb-3">
-        <h3 className="text-center my-4 text-Heading fw-bold">Welcome to Department of CSE(Cyber Security)</h3>
+       <div class="main p-1">
+        <h3 className="text-center my-3 text-Heading fw-bold">Welcome to Department of CSE(Cyber Security)</h3>
         {/* You can add other content for your home page here */}
         <div className="d-flex flex-column min-vh-100 m-2">
         <main className="flex-grow-1">
@@ -142,7 +144,7 @@ return (
             </Carousel>
             
 
-            <Container className="p-3">
+            <Container className="p-2">
             {/* Welcome and About Section */}
                 {/* <Card className="mb-3 shadow-sm dept-about">
                     <Card.Body>
@@ -161,13 +163,13 @@ return (
                 {/*  Associate Dean Message Section */}
                 <Card className=" shadow-sm hod-msg">
                     <Card.Body>
-                    <Card.Title as="h2" className="card-heading text-center pb-4">Message by Associate Dean (Emerging Technologies)</Card.Title>
+                    <Card.Title as="h2" className="card-heading text-center pb-2">Message by Associate Dean (Emerging Technologies)</Card.Title>
                     <Row className="g-1 align-items-center">
-                        <Col md={5} className="d-flex justify-content-center">
+                        <Col lg={5} className="d-flex justify-content-center">
                         {/* Placeholder for Associate Dean Photo */}
                         <img src="dept-images/AssociateDean.jpg" alt="Associate Dean Photo" className="profile-img-hod" />
                         </Col>
-                        <Col md={7}>
+                        <Col lg={6}>
                         {/* <Card.Title as="h3" class="hod-name" >Dr. Lakshmi H.N</Card.Title> */}
                         <Card.Text class="All-text">
                             "It is with immense pleasure that I welcome you to the Department of Computer Science and Engineering (Cyber Security). 
@@ -190,7 +192,11 @@ return (
                     <Card.Body>
                     <Card.Title as="h2" className="card-heading text-center pb-4">Message by Head of the Department</Card.Title>
                     <Row className="g-1 align-items-center">
-                        <Col md={7}>
+                        <Col lg={5} className="d-flex justify-content-center">
+                        {/* Placeholder for HoD's Photo */}
+                        <img src="dept-images/HOD.jpeg" alt="HoD's Photo" className="profile-img-hod" />
+                        </Col>
+                        <Col lg={6}>
                         {/* <Card.Title as="h2" class="hod-name" >Dr. Sunitha Maddhi (Professor and HOD)</Card.Title> */}
                         <Card.Text class="All-text">
                             "It is with immense pleasure that I welcome you to the Department of Computer Science and Engineering (Cyber Security). 
@@ -204,10 +210,7 @@ return (
                             <cite title="Source Title"> Professor & Head of Department</cite>
                         </footer>
                         </Col>
-                        <Col md={5} className="d-flex justify-content-center">
-                        {/* Placeholder for HoD's Photo */}
-                        <img src="dept-images/HOD.jpg" alt="HoD's Photo" className="profile-img-hod" />
-                        </Col>
+                        
                     </Row>
                     </Card.Body>
                 </Card>

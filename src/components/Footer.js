@@ -40,7 +40,6 @@ const Footer = () => {
         {
         title: 'ACADEMICS',
         items: [
-            { text: 'Objectives', url: '/Objectives.js' },
             { text: 'Academic Calendar', url: '/AcademicCalendar.js' },
             { text: 'Syllabus', url: '/SyllabusBooks.js' },
             { text: 'Time Tables', url: '/TimeTables.js' },
