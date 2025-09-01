@@ -81,7 +81,7 @@ const Teaching = () => {
         name: 'Dr. Sunitha Maddhi',
         designation: "Professor & Head of the Department",
         joined: '15/06/2006',
-        imageUrl: "/Teaching/Sunitha_M.JPG",
+        imageUrl: "/Teaching/Sunitha.jpg",
         profileLink: "https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37417"
         },
         {
