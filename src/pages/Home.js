@@ -194,7 +194,7 @@ return (
                     <Row className="g-1 align-items-center">
                         <Col lg={5} className="d-flex justify-content-center">
                         {/* Placeholder for HoD's Photo */}
-                        <img src="dept-images/HOD.JPG" alt="HoD's Photo" className="profile-img-hod" />
+                        <img src="dept-images/HOD.jpg" alt="HoD's Photo" className="profile-img-hod" />
                         </Col>
                         <Col lg={6}>
                         {/* <Card.Title as="h2" class="hod-name" >Dr. Sunitha Maddhi (Professor and HOD)</Card.Title> */}
