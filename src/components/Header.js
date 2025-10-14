@@ -16,30 +16,27 @@ const style = `
 }
 nav{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 50px;
 
 }
 .navbar-custom {
   background: linear-gradient(to right, #fb59b5ff, #00008b); /* Custom gradient */
-  /*  */
+  
   display: flex;
   justify-content: space-evenly;
-  
-  // justify-content: space-around;
   align-items: center;
 }
 
 .navbar-custom .nav-link {
-  padding: 0 10px;
+  padding: 0px;
+  margin:0 35px;
   color: white !important;
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  margin: 0 25px;
+   font-size: larger;
+  
 }
 
 
@@ -163,23 +160,25 @@ const Header = () => {
                     <NavDropdown.Item href="TimeTables.js" className="dropdown-item">Time Tables</NavDropdown.Item>
                 </NavDropdown>
                 {/* Infrastructure Dropdown Menu */}
-                <NavDropdown title="Infrastructure" id="basic-nav-dropdown" menuVariant="light" className="dropdown-menu-custom">
+                <Nav.Link href="Infrastructure.js">Infrastructure</Nav.Link>
+                {/* <NavDropdown title="Infrastructure" id="basic-nav-dropdown" menuVariant="light" className="dropdown-menu-custom">
                     <NavDropdown.Item href="laboratories.js" className="dropdown-item">Laboratories</NavDropdown.Item>
                     <NavDropdown.Item href="classrooms.js" className="dropdown-item">Class Rooms</NavDropdown.Item>
                     <NavDropdown.Item href="seminarhall.js" className="dropdown-item">Seminar Hall</NavDropdown.Item>
                     <NavDropdown.Item href="library.js" className="dropdown-item">Library</NavDropdown.Item>
-                </NavDropdown>
+                </NavDropdown> */}
                 {/* Faculty Dropdown Menu */}
                 <NavDropdown title="Faculty" id="faculty-nav-dropdown" menuVariant="light" className="dropdown-menu-custom">
-                    <NavDropdown.Item href="Teaching.js" className="dropdown-item">Teaching</NavDropdown.Item>
-                    <NavDropdown.Item href="NonTeaching.js" className="dropdown-item">Non-Teaching</NavDropdown.Item>
+                    <NavDropdown.Item href="TeachingFaculty.js" className="dropdown-item">Teaching Faculty</NavDropdown.Item>
+                    {/* <NavDropdown.Item href="Teaching.js" className="dropdown-item">Teaching</NavDropdown.Item> */}
+                    <NavDropdown.Item href="NonTeaching.js" className="dropdown-item">Non-Teaching Faculty</NavDropdown.Item>
                 </NavDropdown>
                 {/* Student Corner Dropdown Menu */}
-                <NavDropdown title="Student Corner" id="student-corner-nav-dropdown" menuVariant="light" className="dropdown-menu-custom">
+                {/* <NavDropdown title="Student Corner" id="student-corner-nav-dropdown" menuVariant="light" className="dropdown-menu-custom">
                     <NavDropdown.Item href="gallery.js" className="dropdown-item">Gallery</NavDropdown.Item>
                     <NavDropdown.Item href="placements.js" className="dropdown-item">Placements</NavDropdown.Item>
                     <NavDropdown.Item href="eresources.js" className="dropdown-item">E-Resources</NavDropdown.Item>
-                </NavDropdown>
+                </NavDropdown> */}
 
                 {/* Publications Hub Dropdown Menu */}
                 {/* <NavDropdown title="Publications Hub" id="publications-hub-nav-dropdown" menuVariant="light" className="dropdown-menu-custom">
@@ -189,13 +188,14 @@ const Header = () => {
                 </NavDropdown> */}
 
                 {/* Research Dropdown Menu */}
-                <NavDropdown title="Research" id="research-nav-dropdown" menuVariant="light" className="dropdown-menu-custom">
+                <Nav.Link href="Research.js">Research</Nav.Link>
+                {/* <NavDropdown title="Research" id="research-nav-dropdown" menuVariant="light" className="dropdown-menu-custom">
                     <NavDropdown.Item href="conferences.js" className="dropdown-item">Conferences</NavDropdown.Item>
                     <NavDropdown.Item href="workshops.js" className="dropdown-item">Workshops</NavDropdown.Item>
                     <NavDropdown.Item href="fdps.js" className="dropdown-item">FDP's</NavDropdown.Item>
                     <NavDropdown.Item href="patents.js" className="dropdown-item">Patents</NavDropdown.Item>
                     <NavDropdown.Item href="publications.js" className="dropdown-item">Publications</NavDropdown.Item>
-                </NavDropdown>
+                </NavDropdown> */}
                 
                 <Nav.Link href="Contact.js">Contact</Nav.Link>
                 </Nav>

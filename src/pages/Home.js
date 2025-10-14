@@ -31,7 +31,7 @@ const styles = `
     color: #030334ff !important;
 }
 .carousel-img {
-    height: 400px;
+    height: 500px;
     object-fit: cover;
     border-radius: 2%;
 
@@ -102,7 +102,7 @@ const Home = () => {
         { number: '2', role: 'Professors' },
         { number: '4', role: 'Associate Professors' },
         { number: '7', role: 'Sr. Assistant Professors' },
-        { number: '9', role: 'Assistant Professors' },
+        { number: '12', role: 'Assistant Professors' },
         { number: '3', role: 'Programmers and Admins' },
         { number: '2', role: 'Office Staff' },
     ];
@@ -119,28 +119,35 @@ return (
         <main className="flex-grow-1">
             
             {/* Automatic Image Carousel */}
-            <Carousel fade controls={false} indicators={false} interval={1000}>
+            <Carousel fade controls={false} indicators={false} interval={3000}>
             <Carousel.Item>
                 <img
                 className="d-block w-100 carousel-img"
-                src="dept-images/Cybersecurity.jpeg"
+                src="dept-images/Dept_photo.jpeg"
                 alt="CyberSecurity"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
                 className="d-block w-100 carousel-img"
-                src="dept-images/lab1.PNG"
-                alt="Cyber Security Labs"
+                src="dept-images/Cybersecurity1.jpg"
+                alt="CyberSecurity"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
                 className="d-block w-100 carousel-img"
                 src="dept-images/College_Building1.png"
-                alt="Department Block"
+                alt="Cyber Security Labs"
                 />
             </Carousel.Item>
+            {/* <Carousel.Item>
+                <img
+                className="d-block w-100 carousel-img"
+                src="dept-images/College_Building1.png"
+                alt="Department Block"
+                />
+            </Carousel.Item> */}
             </Carousel>
             
 
@@ -161,16 +168,16 @@ return (
                 </Card> */}
 
                 {/*  Associate Dean Message Section */}
-                <Card className=" shadow-sm hod-msg">
+                {/* <Card className=" shadow-sm hod-msg">
                     <Card.Body>
                     <Card.Title as="h2" className="card-heading text-center pb-2">Message by Associate Dean (Emerging Technologies)</Card.Title>
                     <Row className="g-1 align-items-center">
                         <Col lg={5} className="d-flex justify-content-center">
-                        {/* Placeholder for Associate Dean Photo */}
+                        
                         <img src="dept-images/AssociateDean.jpg" alt="Associate Dean Photo" className="profile-img-hod" />
                         </Col>
                         <Col lg={6}>
-                        {/* <Card.Title as="h3" class="hod-name" >Dr. Lakshmi H.N</Card.Title> */}
+                       
                         <Card.Text class="All-text">
                             "It is with immense pleasure that I welcome you to the Department of Computer Science and Engineering (Cyber Security). 
                             In today's interconnected world, cybersecurity is not just a field of study—it's a necessity. Our department is committed to 
@@ -185,7 +192,7 @@ return (
                         </Col>
                     </Row>
                     </Card.Body>
-                </Card>
+                </Card> */}
 
                 {/* HoD's Message Section */}
                 <Card className=" shadow-sm hod-msg mt-3">

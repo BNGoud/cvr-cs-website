@@ -1,7 +1,7 @@
 .div{
     object-fit:contain;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:center;
     align-content: center;
     align-self: center;
     transform: scale(1,1);
@@ -10,4 +10,5 @@
     font-weight: bolder;
     background-color: rgb(165, 171, 247);
     color: rgba(156, 7, 197, 0.513);
+    font-size: larger;
 }

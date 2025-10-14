@@ -72,7 +72,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
         {
         year: 'I Year',
         regulation: '2025-26 - R25',
-        pdfUrl: 'SyllabusBooks/WT_SUB.pdf',
+        pdfUrl: 'SyllabusBooks/',
         iconUrl: 'https://placehold.co/64x64/4682B4/fff?text=%E2%9C%85',
         },
         {

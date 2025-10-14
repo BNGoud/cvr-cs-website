@@ -9,7 +9,10 @@ import AcademicCalendar from './pages/AcademicCalendar'
 import SyllabusBooks from './pages/SyllabusBooks'
 import TimeTables from './pages/TimeTables'
 import Contact from './pages/Contact';
- import About from './pages/About';
+import About from './pages/About';
+import Research from './pages/Research';
+import TeachingFaculty from './pages/TeachingFaculty';
+import Infrastructure from './pages/Infrastructure';
 
 
 const App = () => {
@@ -26,6 +29,9 @@ const App = () => {
         <Route path="TimeTables.js" element={<TimeTables />} />
         <Route path="Contact.js" element={<Contact />} />
         <Route path="About.js" element={<About />} />
+        <Route path="Research.js" element={<Research />} />
+        <Route path="TeachingFaculty.js" element={<TeachingFaculty />} />
+        <Route path="Infrastructure.js" element={<Infrastructure />} /> 
       </Routes>
     </Router>
   

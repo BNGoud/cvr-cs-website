@@ -70,7 +70,7 @@ const About = () => {
                 "M1: Develop a strong foundation of security awareness within the college community.",
                 "M2: Encourage cutting-edge research to tackle emerging cybersecurity challenges.",
                 "M3: Create opportunities for students with strong industry interaction of real-world security scenarios.",
-                "M4: Provide proactive security measures for the protection of digital infrastructure and data of the college and society.",
+                "M4: Provide proactive security measures by applying secure design concepts for the protection of digital infrastructure and data of the college and society.",
             ],
         },
         peos: {
@@ -87,6 +87,14 @@ const About = () => {
                 {
                     peo: "PEO3:",
                     text: "Graduates will exhibit ethical responsibility, strong communication, and teamwork skills to collaborate effectively in diverse professional environments."
+                },
+                {
+                    peo: "PEO4:",
+                    text: "Graduates will engage in continuous learning to keep pace with rapidly evolving technologies and contribute to innovation in cybersecurity."
+                },
+                {
+                    peo: "PEO5:",
+                    text: "Graduates will exhibit effective communication, leadership, and teamwork skills to function efficiently in multidisciplinary and multicultural environments."
                 },
             ],
         },

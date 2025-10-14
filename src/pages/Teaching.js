@@ -231,7 +231,27 @@ const Teaching = () => {
         imageUrl: "/Teaching/AmarnathGoud.jpg",
         profileLink: "https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/39591"
         },
-
+        {
+        name: 'Mr. B.Mahender Reddy ',
+        designation: "Assistant Professor",
+        joined: '03/09/2025',
+        imageUrl: "/Teaching/Mahender.jpeg",
+        profileLink: "https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/54179"
+        },
+        {
+        name: 'Mr. T. Shashi kumar ',
+        designation: "Assistant Professor",
+        joined: '03/09/2025',
+        imageUrl: "/Teaching/Shashi.jpeg",
+        profileLink: "https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/54184"
+        },
+        {
+        name: 'Ms. Muppu Prathyusha ',
+        designation: "Assistant Professor",
+        joined: '03/09/2025',
+        imageUrl: "/Teaching/Prathyusha.png",
+        profileLink: "https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/54183"
+        },
         
     ];
 

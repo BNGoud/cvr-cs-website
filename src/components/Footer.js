@@ -48,35 +48,45 @@ const Footer = () => {
         {
         title: 'FACULTY',
         items: [
-            { text: 'Teaching', url: '/Teaching.js' },
+            { text: 'Teaching', url: '/TeachingFaculty.js' },
+            // { text: 'Teaching', url: '/Teaching.js' },
             { text: 'Non-Teaching', url: '/NonTeaching.js' },
         ],
         },
         {
-        title: 'RESEARCH',
+        title: ' ',
         items: [
-            { text: 'Conferences', url: '/Conferences.js' },
-            { text: 'Workshops', url: '/Workshops.js' },
-            { text: "FDP's", url: '/Fdps.js' },
-            { text: 'Patents', url: '/Patents.js' },
+            { text: 'About', url: '/About.js' },
+            { text: 'Research', url: '/Research.js' },
+            // 
+            { text: 'Infrastructure', url: '/Infrastructure.js' },
         ],
         },
-        {
-        title: 'STUDENT CORNER',
-        items: [
-            { text: 'E-Resources', url: '/Eresources.js' },
-            { text: 'Gallery', url: '/Gallery.js' },
-            { text: 'Placements', url: '/Placements.js' },
-        ],
-        },
-        {
-        title: 'PUBLICATIONS HUB',
-        items: [
-            { text: 'Technical', url: '/TechnicalPublications.js' },
-            { text: 'Non Technical', url: '/NonTechnicalPublications.js' },
-            { text: 'News Letter', url: '/Newsletter.js' },
-        ],
-        },
+        // {
+        // title: 'RESEARCH',
+        // items: [
+        //     { text: 'Conferences', url: '/Conferences.js' },
+        //     { text: 'Workshops', url: '/Workshops.js' },
+        //     { text: "FDP's", url: '/Fdps.js' },
+        //     { text: 'Patents', url: '/Patents.js' },
+        // ],
+        // },
+        // {
+        // title: 'STUDENT CORNER',
+        // items: [
+        //     { text: 'E-Resources', url: '/Eresources.js' },
+        //     { text: 'Gallery', url: '/Gallery.js' },
+        //     { text: 'Placements', url: '/Placements.js' },
+        // ],
+        // },
+        // {
+        // title: 'PUBLICATIONS HUB',
+        // items: [
+        //     { text: 'Technical', url: '/TechnicalPublications.js' },
+        //     { text: 'Non Technical', url: '/NonTechnicalPublications.js' },
+        //     { text: 'News Letter', url: '/Newsletter.js' },
+        // ],
+        // },
     ];
 
     return (
@@ -96,7 +106,7 @@ const Footer = () => {
             */}
             <Row className="g-4 mb-1">
                 {footerLinks.map((column, index) => (
-                <Col xs={6} md={4} lg={2} key={index}>
+                <Col xs={6} md={3} lg={3} key={index}>
                     <h6 className="fw-bold mb-3">{column.title}</h6>
                     <ul className="list-unstyled small">
                     {column.items.map((item, itemIndex) => (
