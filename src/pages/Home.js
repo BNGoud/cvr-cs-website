@@ -123,21 +123,21 @@ return (
             <Carousel.Item>
                 <img
                 className="d-block w-100 carousel-img"
-                src="dept-images/Dept_group_photo.jpg"
-                alt="CyberSecurity"
-                />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                className="d-block w-100 carousel-img"
-                src="dept-images/Cybersecurity1.png"
-                alt="CyberSecurity"
-                />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                className="d-block w-100 carousel-img"
                 src="dept-images/College_Building1.png"
+                alt="Department Block"
+                />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                className="d-block w-100 carousel-img"
+                src="dept-images/Cybersecurity1.jpg"
+                alt="CyberSecurity"
+                />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                className="d-block w-100 carousel-img"
+                src="dept-images/Dept_Photo.png"
                 alt="Cyber Security Labs"
                 />
             </Carousel.Item>
