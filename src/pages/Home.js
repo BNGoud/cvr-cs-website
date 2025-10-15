@@ -119,7 +119,7 @@ return (
         <main className="flex-grow-1">
             
             {/* Automatic Image Carousel */}
-            <Carousel fade controls={false} indicators={false} interval={3000}>
+            <Carousel fade controls={false} indicators={false} interval={2000}>
             <Carousel.Item>
                 <img
                 className="d-block w-100 carousel-img"
@@ -130,17 +130,24 @@ return (
             <Carousel.Item>
                 <img
                 className="d-block w-100 carousel-img"
-                src="dept-images/Cybersecurity1.jpg"
+                src="dept-images/Cybersecurity.jpeg"
                 alt="CyberSecurity"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
                 className="d-block w-100 carousel-img"
+                src="dept-images/lab1.PNG"
+                alt="Department Lab"
+                />
+            </Carousel.Item>
+            {/* <Carousel.Item>
+                <img
+                className="d-block w-100 carousel-img"
                 src="dept-images/Dept_Photo.png"
                 alt="Cyber Security Labs"
                 />
-            </Carousel.Item>
+            </Carousel.Item> */}
             {/* <Carousel.Item>
                 <img
                 className="d-block w-100 carousel-img"
