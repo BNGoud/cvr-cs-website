@@ -42,7 +42,7 @@ const styles = `
     text-decoration: underline;
 }
 .hod_profile {
-    width: 200px;
+    width: 250px;
     height: 300px;
     object-fit: cover;
     border-radius: 10%;
@@ -123,28 +123,28 @@ return (
             <Carousel.Item>
                 <img
                 className="d-block w-100 carousel-img"
-                src="/dept-images/Dept_Photo.png"
+                src="/dept-images/Dept_Photo.JPEG"
                 alt="Cyber Security Labs"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
                 className="d-block w-100 carousel-img"
-                src="dept-images/College_Building1.png"
+                src="/dept-images/College_Building1.png"
                 alt="Department Block"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
                 className="d-block w-100 carousel-img"
-                src="dept-images/Cybersecurity.jpeg"
+                src="/dept-images/Cybersecurity.jpeg"
                 alt="CyberSecurity"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
                 className="d-block w-100 carousel-img"
-                src="dept-images/lab1.PNG"
+                src="/dept-images/lab1.PNG"
                 alt="Department Lab"
                 />
             </Carousel.Item>
