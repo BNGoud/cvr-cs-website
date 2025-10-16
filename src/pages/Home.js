@@ -123,7 +123,7 @@ return (
             <Carousel.Item>
                 <img
                 className="d-block w-100 carousel-img"
-                src="/dept-images/Dept_Photo.JPEG"
+                src="/dept-images/Dept_Photo.jpeg"
                 alt="Cyber Security Labs"
                 />
             </Carousel.Item>
