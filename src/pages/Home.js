@@ -42,7 +42,7 @@ const styles = `
     text-decoration: underline;
 }
 .hod_profile {
-    width: 280px;
+    width: 200px;
     height: 300px;
     object-fit: cover;
     border-radius: 10%;
@@ -209,7 +209,8 @@ return (
                     <Row className="g-1 align-items-center">
                         <Col lg={5} className="d-flex justify-content-center">
                         {/* Placeholder for HoD's Photo */}
-                        <img src="/dept-images/HOD.jpg" alt="HoD's Photo" className="hod_profile" />
+                        <img src={`${process.env.PUBLIC_URL}/dept-images/HOD.jpg`} alt="HoD's Photo" className="hod_profile" />
+                        {/* <img src="/dept-images/HOD.jpg" alt="HoD's Photo" className="hod_profile" /> */}
                         </Col>
                         <Col lg={6}>
                         {/* <Card.Title as="h2" class="hod-name" >Dr. Sunitha Maddhi (Professor and HOD)</Card.Title> */}
