@@ -10,7 +10,7 @@ const Infrastructure = () => {
   const infrastructureData = [
     {
       title: "Classrooms",
-      images: ["class1.jpg", "class2.jpg", "class3.jpg"],
+      images: ["class1.jpg", "class2.jpg"],
     },
     {
       title: "Labs",
@@ -21,7 +21,7 @@ const Infrastructure = () => {
       images: ["seminar1.avif","seminar2.avif"],
     },
     {
-      title: "Library",
+      title: "College Library",
       images: ["library1.jpg", "library2.jpg"],
     },
   ];

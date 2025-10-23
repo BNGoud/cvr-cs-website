@@ -69,12 +69,12 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 `;
 
     const bookData = [
-        {
-        year: 'I Year',
-        regulation: '2025-26 - R25',
-        pdfUrl: 'SyllabusBooks/',
-        iconUrl: 'https://placehold.co/64x64/4682B4/fff?text=%E2%9C%85',
-        },
+        // {
+        // year: 'I Year',
+        // regulation: '2025-26 - R25',
+        // pdfUrl: 'SyllabusBooks/',
+        // iconUrl: 'https://placehold.co/64x64/4682B4/fff?text=%E2%9C%85',
+        // },
         {
         year: 'II Year',
         regulation: '2025-26 - R22',

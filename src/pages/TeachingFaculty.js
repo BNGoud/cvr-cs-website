@@ -203,7 +203,7 @@ const faculties = [
     nature: "Regular",
     specialization: "CSE",
     email: "amarnath.goud@cvr.ac.in",
-    photo: "Teaching/amarnathGoud.jpg"
+    photo: "Teaching/AmarnathGoud.jpg"
   },
   {
     name: "Mr. K. Prakasha Chary",

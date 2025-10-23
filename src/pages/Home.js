@@ -42,7 +42,7 @@ const styles = `
     text-decoration: underline;
 }
 .hod_profile {
-    width: 250px;
+    width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 10%;
@@ -176,13 +176,13 @@ return (
                 </Card> */}
 
                 {/*  Associate Dean Message Section */}
-                {/* <Card className=" shadow-sm hod-msg">
+                {/* {<Card className=" shadow-sm hod-msg">
                     <Card.Body>
                     <Card.Title as="h2" className="card-heading text-center pb-2">Message by Associate Dean (Emerging Technologies)</Card.Title>
                     <Row className="g-1 align-items-center">
                         <Col lg={5} className="d-flex justify-content-center">
                         
-                        <img src="dept-images/AssociateDean.jpg" alt="Associate Dean Photo" className="profile-img-hod" />
+                        <img src="dept-images/AssociateDean.jpg" alt="Associate Dean Photo" className="hod_profile" />
                         </Col>
                         <Col lg={6}>
                        
@@ -200,7 +200,7 @@ return (
                         </Col>
                     </Row>
                     </Card.Body>
-                </Card> */}
+                </Card> } */}
 
                 {/* HoD's Message Section */}
                 <Card className=" shadow-sm hod-msg mt-3">
@@ -209,8 +209,8 @@ return (
                     <Row className="g-1 align-items-center">
                         <Col lg={5} className="d-flex justify-content-center">
                         {/* Placeholder for HoD's Photo */}
-                        <img src={`${process.env.PUBLIC_URL}/dept-images/hod.jpg`} alt="HoD's Photo" className="hod_profile" />
-                        {/* <img src="/dept-images/HOD.jpg" alt="HoD's Photo" className="hod_profile" /> */}
+                        {/* <img src={`${process.env.PUBLIC_URL}/dept-images/hod.jpg`} alt="HoD's Photo" className="hod_profile" /> */}
+                        <img src="/dept-images/hod1.jpeg" alt="HoD's Photo" className="hod_profile" />
                         </Col>
                         <Col lg={6}>
                         {/* <Card.Title as="h2" class="hod-name" >Dr. Sunitha Maddhi (Professor and HOD)</Card.Title> */}
