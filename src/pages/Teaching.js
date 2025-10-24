@@ -179,7 +179,7 @@ const Teaching = () => {
         name: 'Mrs. Vasantha Lakshmi',
         designation: "Assistant Professor",
         joined: '07/03/2020',
-        imageUrl: "/Teaching/VasanthaLakshimi.jpg",
+        imageUrl: "/Teaching/VasanthaLakshmi.jpg",
         profileLink: "https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37428"
         },
         {

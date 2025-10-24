@@ -169,8 +169,8 @@ const Header = () => {
                 </NavDropdown> */}
                 {/* Faculty Dropdown Menu */}
                 <NavDropdown title="Faculty" id="faculty-nav-dropdown" menuVariant="light" className="dropdown-menu-custom">
-                    <NavDropdown.Item href="TeachingFaculty.js" className="dropdown-item">Teaching Faculty</NavDropdown.Item>
-                    {/* <NavDropdown.Item href="Teaching.js" className="dropdown-item">Teaching</NavDropdown.Item> */}
+                    {/* <NavDropdown.Item href="TeachingFaculty.js" className="dropdown-item">Teaching Faculty</NavDropdown.Item> */}
+                    <NavDropdown.Item href="Teaching.js" className="dropdown-item">Teaching Faculty</NavDropdown.Item>
                     <NavDropdown.Item href="NonTeaching.js" className="dropdown-item">Non-Teaching Faculty</NavDropdown.Item>
                 </NavDropdown>
                 {/* Student Corner Dropdown Menu */}
